@@ -1,16 +1,18 @@
 {
-  "name": "opxcore/app",
+  "name": "opxcore/app-profiler-interface",
   "description": "The OpxCore Application.",
   "keywords": [
     "opxcore",
-    "application"
+    "application",
+    "profiler",
+    "interface"
   ],
   "license": "MIT",
   "type": "library",
   "homepage": "https://opxcore.com",
   "support": {
-    "issues": "https://github.com/opxcore/config/issues",
-    "source": "https://github.com/opxcore/config"
+    "issues": "https://github.com/opxcore/app-profiler-interface/issues",
+    "source": "https://github.com/opxcore/app-profiler-interface"
   },
   "authors": [
     {
