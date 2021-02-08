@@ -13,14 +13,14 @@ namespace OpxCore\App\Interfaces;
 interface ProfilerInterface
 {
     /**
-     * Create og get profiler singleton.
+     * Create or get profiler singleton.
      *
      * @param int|null $startTime
      * @param int|null $startMem
      *
      * @return  ProfilerInterface
      */
-    public static function getProfiler(?int $startTime = null, ?int $startMem = null): ProfilerInterface;
+    public static function get(?int $startTime = null, ?int $startMem = null): ProfilerInterface;
 
     /**
      * Profiler constructor.
@@ -39,7 +39,7 @@ interface ProfilerInterface
      *
      * @return  void
      */
-    public function profilingStart(string $action): void;
+    public function start(string $action): void;
 
     /**
      * Write action to profiling or get whole profiling list.
@@ -50,14 +50,21 @@ interface ProfilerInterface
      *
      * @return  void
      */
-    public function profilingStop(?string $action = null, ?int $timestamp = null, ?int $memory = null): void;
+    public function stop(?string $action = null, ?int $timestamp = null, ?int $memory = null): void;
 
     /**
-     * Returns profiling list or set profiling mode enabled or disabled.
+     * Set profiling mode enabled or disabled.
      *
-     * @param bool|null $enable
+     * @param bool $enable
+     *
+     * @return  void
+     */
+    public function enable(?bool $enable = null): void;
+
+    /**
+     * Returns profiling list.
      *
      * @return  array[]|null
      */
-    public function profiling(?bool $enable = null): ?array;
+    public function profiling(): ?array;
 }
