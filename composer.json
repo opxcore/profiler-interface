@@ -1,0 +1,31 @@
+{
+  "name": "opxcore/app",
+  "description": "The OpxCore Application.",
+  "keywords": [
+    "opxcore",
+    "application"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "homepage": "https://opxcore.com",
+  "support": {
+    "issues": "https://github.com/opxcore/config/issues",
+    "source": "https://github.com/opxcore/config"
+  },
+  "authors": [
+    {
+      "name": "Lozovoy Vyacheslav",
+      "email": "opxcore@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "OpxCore\\App\\Interfaces\\": "src/"
+    }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
