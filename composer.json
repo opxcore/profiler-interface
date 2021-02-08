@@ -1,6 +1,6 @@
 {
   "name": "opxcore/app-profiler-interface",
-  "description": "The OpxCore Application.",
+  "description": "The OpxCore application profiler interface.",
   "keywords": [
     "opxcore",
     "application",
