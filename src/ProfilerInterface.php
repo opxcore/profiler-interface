@@ -13,26 +13,6 @@ namespace OpxCore\App\Interfaces;
 interface ProfilerInterface
 {
     /**
-     * Create or get profiler singleton.
-     *
-     * @param int|null $startTime
-     * @param int|null $startMem
-     *
-     * @return  ProfilerInterface
-     */
-    public static function get(?int $startTime = null, ?int $startMem = null): ProfilerInterface;
-
-    /**
-     * Profiler constructor.
-     *
-     * @param int|null $startTime
-     * @param int|null $startMem
-     *
-     * @return  void
-     */
-    public function __construct(?int $startTime = null, ?int $startMem = null);
-
-    /**
      * Start profiling stopwatch.
      *
      * @param string $action
