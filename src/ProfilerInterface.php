@@ -24,13 +24,13 @@ interface ProfilerInterface
     /**
      * Write action to profiling or get whole profiling list.
      *
-     * @param string|null $action
+     * @param string $action
      * @param int|null $timestamp
      * @param int|null $memory
      *
      * @return  void
      */
-    public function stop(?string $action = null, ?int $timestamp = null, ?int $memory = null): void;
+    public function stop(string $action, ?int $timestamp = null, ?int $memory = null): void;
 
     /**
      * Set profiling mode enabled or disabled.
@@ -39,7 +39,7 @@ interface ProfilerInterface
      *
      * @return  void
      */
-    public function enable(?bool $enable = true): void;
+    public function enable(bool $enable = true): void;
 
     /**
      * Returns profiling list.
