@@ -39,7 +39,7 @@ interface ProfilerInterface
      *
      * @return  void
      */
-    public function enable(?bool $enable = null): void;
+    public function enable(?bool $enable = true): void;
 
     /**
      * Returns profiling list.
