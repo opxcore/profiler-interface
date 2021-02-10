@@ -15,18 +15,20 @@ interface ProfilerInterface
     /**
      * Start profiling stopwatch.
      *
-     * @param string $action
+     * @param string $action Action name is used to display name of entry
+     * @param int|null $timestamp Externally captured time
+     * @param int|null $memory Externally captured memory usage
      *
      * @return  void
      */
-    public function start(string $action): void;
+    public function start(string $action, ?int $timestamp = null, ?int $memory = null): void;
 
     /**
      * Write action to profiling or get whole profiling list.
      *
-     * @param string $action
-     * @param int|null $timestamp
-     * @param int|null $memory
+     * @param string $action Action name is used to display name of entry
+     * @param int|null $timestamp Externally captured time
+     * @param int|null $memory Externally captured memory usage
      *
      * @return  void
      */
