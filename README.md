@@ -1,1 +1,1 @@
-# Application profiler interface
+# Profiler interface
