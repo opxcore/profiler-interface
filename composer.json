@@ -1,9 +1,8 @@
 {
-  "name": "opxcore/app-profiler-interface",
-  "description": "The OpxCore application profiler interface.",
+  "name": "opxcore/profiler-interface",
+  "description": "The OpxCore profiler interface.",
   "keywords": [
     "opxcore",
-    "application",
     "profiler",
     "interface"
   ],
@@ -11,8 +10,8 @@
   "type": "library",
   "homepage": "https://opxcore.com",
   "support": {
-    "issues": "https://github.com/opxcore/app-profiler-interface/issues",
-    "source": "https://github.com/opxcore/app-profiler-interface"
+    "issues": "https://github.com/opxcore/profiler-interface/issues",
+    "source": "https://github.com/opxcore/profiler-interface"
   },
   "authors": [
     {
@@ -25,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "OpxCore\\App\\Interfaces\\": "src/"
+      "OpxCore\\Profiler\\Interfaces\\": "src/"
     }
   },
   "prefer-stable": true,
