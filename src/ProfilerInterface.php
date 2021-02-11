@@ -29,10 +29,11 @@ interface ProfilerInterface
      * @param string $action Action name is used to display name of entry
      * @param int|null $timestamp Externally captured time
      * @param int|null $memory Externally captured memory usage
+     * @param array|null $stacktrace Externally captured stacktrace
      *
      * @return  void
      */
-    public function stop(string $action, ?int $timestamp = null, ?int $memory = null): void;
+    public function stop(string $action, ?int $timestamp = null, ?int $memory = null, ?array $stacktrace = null): void;
 
     /**
      * Set profiling mode enabled or disabled.
